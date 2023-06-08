@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài 1</title>
+        <style>
+            .form-group {
+                display: flex;
+                gap: 32px;
+                margin-bottom: 20px;
+            }
+
+            .form-row label {
+                display: block;
+            }
+
+            span {
+                color: #7d7979;
+            }
+
+            select {
+                width: 169px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Try a free sample</h2>
+        <p>
+            Sign up to get a coupon you can redeem at your nearest Dancing <br />
+            Goat cafe for a sample of the Colombia Carlos Imbachi coffee . We'll <br />
+            also make sure you don't miss out on news introducing the new <br />
+            coffees that we add to our store regularly
+        </p>
+        <form action="#">
+            <div class="form-group">
+                <div class="form-row">
+                    <label for="firstname">First name</label>
+                    <input type="text" name="" id="firstname" placeholder="John" required />
+                </div>
+                <div class="form-row">
+                    <label for="lastname">Last name</label>
+                    <input type="text" name="" id="lastname" placeholder="Smith" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <label for="email">Email address</label>
+                    <input type="email" name="" id="email" placeholder="john@example.com" required />
+                </div>
+                <div class="form-row">
+                    <label for="address">Address</label>
+                    <input type="text" name="" id="address" placeholder="Silk St" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <label for="city">City</label>
+                    <input type="text" name="" id="city" placeholder="London" required />
+                </div>
+                <div class="form-row">
+                    <label for="state">State<span>(optional)</span></label>
+                    <input type="text" name="" id="state" required />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <label for="zip">ZIP code</label>
+                    <input type="text" name="" id="zip" placeholder="EC2Y 8DS" required />
+                </div>
+                <div class="form-row">
+                    <label for="country">Country</label>
+                    <select name="" id="country">
+                        <option value="">United Kingdom</option>
+                        <option value="">Viet Nam</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">SEND ME FREE COFFEE</button>
+        </form>
+    </body>
+</html>
