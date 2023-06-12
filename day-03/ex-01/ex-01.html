@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form liên hệ</title>
+
+        <!-- Embed Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Embed Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="contact-form">
+            <div class="container">
+                <h1 class="contact-form__heading">CONTACT US</h1>
+                <div class="contact-inner">
+                    <div class="contact-left">
+                        <h2 class="contact-left__title">Contact info</h2>
+                        <div class="contact-list">
+                            <!-- Item 1 -->
+                            <div class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span class="contact-item__info">
+                                    321 Awesome Street <br />
+                                    New York, NY 17022
+                                </span>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="contact-item">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span class="contact-item__info">info@companyname.com</span>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span class="contact-item__info">+1 800 123 1234</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-right">
+                        <h2 class="contact-right__title">Having Any Query! Or Book an appointment</h2>
+                        <div class="form-control">
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="text" name="fullname" placeholder="Your Name" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Your Email" required />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="subject" placeholder="Subject" required />
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                </div>
+                                <button class="btn">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

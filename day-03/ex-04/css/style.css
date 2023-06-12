@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contact-map {
+    margin-top: 50px;
+}
+
+.contact-tab {
+    width: 600px;
+    display: flex;
+    border: 2px solid #b09757;
+}
+
+.contact-tab > li > a {
+    display: block;
+    padding: 8px 25px;
+    color: #b09757;
+}
+
+.contact-tab > li > .active {
+    background: #b09757;
+    color: #fff;
+}
+
+.map-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    background: #f2f2f2;
+}
+
+.map-info {
+    padding: 50px 0 0 35px;
+}
+
+.map-info__heading {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.map-item {
+    margin-top: 20px;
+}
+
+.map-item__info {
+    display: block;
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.map-item__info > a {
+    color: #999;
+}
+
+.map-item__info:last-child > a {
+    color: #b09757;
+    text-decoration: underline;
+}

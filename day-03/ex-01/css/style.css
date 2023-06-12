@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-form {
+    margin-top: 50px;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.contact-form__heading {
+    font-size: 3rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.contact-form__heading::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -6px;
+    display: inline-block;
+    width: 66px;
+    height: 3px;
+    background: #ffa500;
+}
+
+.contact-inner {
+    margin-top: 30px;
+    display: flex;
+}
+
+.contact-left {
+    width: 35%;
+}
+
+.contact-right {
+    width: 65%;
+}
+
+.contact-left__title,
+.contact-right__title {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: #999;
+    margin-top: 28px;
+}
+
+.contact-item i {
+    font-size: 2.5rem;
+}
+
+.contact-item__info {
+    margin-left: 15px;
+    font-size: 1.6rem;
+}
+
+.form-control {
+    margin-top: 31px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #0cb7b6;
+    color: #fff;
+    border: none;
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.heading {
+    font-size: 5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.heading > b {
+    color: #0aa9e2;
+}
+
+.desc {
+    font-size: 1.6rem;
+    color: #2c3033;
+    text-align: center;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.cta-btn {
+    background: #2c3033;
+    padding: 13px 35px;
+    color: #fff;
+    border-radius: 3px;
+}

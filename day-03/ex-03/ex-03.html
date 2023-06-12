@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Access Manager</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <div class="form-control">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" required />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required />
+                </div>
+                <div class="form-group">
+                    <label for="city">City of Employment:</label>
+                    <input type="text" name="city" id="city" required />
+                </div>
+                <div class="form-group">
+                    <label for="server">Web server:</label>
+                    <select>
+                        <option value="0" hidden>--Choose a server--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Please specify your role:</label>
+                    <div class="group-inner">
+                        <label><input type="radio" name="role" value="0" />Admin</label>
+                        <label><input type="radio" name="role" value="1" />Engineer</label>
+                        <label><input type="radio" name="role" value="2" />Manager</label>
+                        <label><input type="radio" name="role" value="3" />Guest</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Please specify your role:</label>
+                    <div class="group-inner">
+                        <label><input type="checkbox" name="mail" value="0" />Mail</label>
+                        <label><input type="checkbox" name="payroll" value="1" />Payroll</label>
+                        <label><input type="checkbox" name="service" value="2" />Self-service</label>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <button type="submit">Login</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
