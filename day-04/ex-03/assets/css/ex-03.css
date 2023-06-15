@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.seller-inner {
+    margin-top: 50px;
+}
+
+.seller-heading {
+    font-family: "PT Serif", serif;
+    text-align: center;
+}
+
+.seller-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.tab-item label {
+    padding: 8px 20px;
+    background: #f5f5f5;
+    color: #515151;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked ~ label {
+    background: #29388d;
+    color: #fff;
+}
+
+.product-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 48px;
+    margin-top: 54px;
+}
+
+.product-item {
+    position: relative;
+}
+
+.img-hover {
+    overflow: hidden;
+    position: relative;
+}
+.img-hover img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.75s linear;
+}
+.img-change {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.img-hover:hover .img-change {
+    opacity: 0;
+}
+
+.cart-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-hover {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    margin-left: 1px;
+}
+
+.img-hover:hover .cart-hover {
+    opacity: 1;
+    bottom: 8px;
+}
+
+.cart-hover a > i {
+    background: #29388d;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.add-to-cart {
+    display: block;
+    margin-top: 10px;
+    padding: 12px 80px;
+    background: #29388d;
+    color: #fff;
+    text-align: center;
+}
+
+.product-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.rating-star i {
+    font-size: 1.2rem;
+    color: #f5c342;
+}
+
+.rating-star i.none {
+    color: #9f9f9f;
+}
+
+.product-container__name {
+    margin: 10px 0;
+    color: #515151;
+    font-weight: 600;
+}
+
+.product-container__price {
+    font-weight: 600;
+    color: #000;
+}
