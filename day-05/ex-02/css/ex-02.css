@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.accordion-inner {
+    margin-top: 50px;
+}
+
+.accordion-item input[type="checkbox"] {
+    display: none;
+}
+
+.accordion-item label {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background: #d95925;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.accordion-item label::before {
+    content: "+";
+    margin-right: 10px;
+}
+
+.accordion-item input[type="checkbox"]:checked + label::before {
+    content: "-";
+}
+
+.accordion-content {
+    display: none;
+    padding-left: 10px;
+}
+
+.accordion-item input[type="checkbox"]:checked + label + .accordion-content {
+    display: block;
+}
+
+.accordion-content__text {
+    font-size: 1.4rem;
+}
+
+.accordion-content__text span {
+    font-weight: 600;
+}

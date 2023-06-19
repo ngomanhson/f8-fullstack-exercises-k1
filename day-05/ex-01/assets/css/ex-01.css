@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Lobster;
+    src: url("../fonts/Lobster/Lobster-Regular.ttf");
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("../fonts/Lato/Lato-Bold.ttf");
+    font-weight: bold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Lato, sans-serif;
+}
+
+input,
+textarea,
+select,
+option {
+    font-family: Lato, sans-serif;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.container {
+    width: 750px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.form-inner {
+    padding: 30px 80px;
+}
+
+.form-text__heading {
+    font-family: Lobster, sans-serif;
+    font-size: 4.2rem;
+}
+
+.form-text__desc {
+    margin-top: 25px;
+    color: #999;
+}
+
+.form-control {
+    margin-top: 25px;
+}
+
+.form-text__desc span {
+    color: #ea3f32;
+    font-weight: 600;
+}
+
+.form-group {
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+    margin: 25px 0;
+}
+
+.form-input {
+    width: 100%;
+    padding: 14px 15px 14px 55px;
+}
+
+label {
+    color: #999;
+}
+
+.star::after {
+    font-family: "FontAwesome";
+    content: "\f005";
+    font-size: 12px;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+}
+
+.form-input:focus + .star::after,
+textarea:focus + .star::after {
+    content: "\f00d";
+}
+
+.icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    background: #ddd;
+    color: #fff;
+    text-align: center;
+}
+
+.form-input:focus,
+.form-input:active,
+.form-input:hover,
+.form-select:hover,
+.form-select:focus,
+.form-select:active,
+textarea:focus,
+textarea:active,
+textarea:hover {
+    border: 1px solid #333;
+    outline: none;
+}
+
+.form-input:focus + label .icon,
+.form-input:active + label .icon,
+.form-input:hover + label .icon,
+.form-select:active + label .icon,
+.form-select:focus + label .icon,
+.form-select:hover + label .icon,
+textarea:active + label .icon,
+textarea:focus + label .icon,
+textarea:hover + label .icon {
+    background-color: #333;
+    border: 1px solid #333;
+}
+
+.form-tooltip {
+    position: absolute;
+    top: -50px;
+    left: 22px;
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.form-tooltip::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    left: 25px;
+    border: 10px solid transparent;
+    border-top-color: #333;
+}
+
+.form-input:focus ~ .form-tooltip,
+.form-input:active ~ .form-tooltip,
+.form-select:focus ~ .form-tooltip,
+.form-select:active ~ .form-tooltip,
+textarea:active ~ .form-tooltip,
+textarea:focus ~ .form-tooltip {
+    display: block;
+}
+
+.form-select {
+    display: inline-block;
+    width: 100%;
+    padding: 13px 15px 13px 55px;
+}
+
+textarea {
+    padding: 13px 15px 13px 55px;
+    width: 100%;
+    height: 240px;
+    resize: none;
+}
+
+.icon-message {
+    height: 240px;
+}
+
+.form-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 10px 35px;
+    background: #ea3f32;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    margin: 0;
+    display: none;
+}
+
+.checkbox-wrapper {
+    position: relative;
+}
+
+.checkbox-wrapper input[type="checkbox"] + label {
+    margin-left: 30px;
+}
+
+.checkbox-wrapper input[type="checkbox"] + label::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    background-color: transparent;
+    border-radius: 0;
+    border: 2px solid #ddd;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label::before {
+    background-color: transparent;
+    border: 2px solid #999;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + label::after {
+    font-family: "FontAwesome";
+    content: "\f00c";
+    position: absolute;
+    display: block;
+    color: #333;
+    top: 3px;
+    left: 4px;
+    cursor: pointer;
+}

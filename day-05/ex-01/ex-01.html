@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bài tập 1</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link rel="stylesheet" href="./assets/css/ex-01.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-inner">
+                <div class="form-text">
+                    <h1 class="form-text__heading">Hey there</h1>
+                    <p class="form-text__desc"><span>We'd like to hear form you.</span> Send us your message or just say hy with or contact form diectly via phone, we love to chat.</p>
+                </div>
+
+                <div class="form-control">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your name" id="fullname" required class="form-input" />
+                            <label for="fullname" class="star"><i class="fa fa-user icon"></i></label>
+                            <span class="form-tooltip">Enter your name</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="your@domain.com " id="email" required class="form-input" />
+                            <label for="email" class="star"><i class="fa fa-envelope icon"></i></label>
+                            <span class="form-tooltip">Enter email address</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="+44 00 123" id="phone" required class="form-input" />
+                            <label for="phone"><i class="fa fa-phone icon"></i></label>
+                            <span class="form-tooltip">Enter phone number</span>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-select" id="subject" name="subject">
+                                <option value="0" hidden>Subject</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <label for="subject"><i class="fa fa-book icon"></i></label>
+                            <span class="form-tooltip">Select subject</span>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" placeholder="Message"></textarea>
+                            <label for="message" class="star"><i class="fa-solid fa-message icon icon-message"></i></label>
+                            <span class="form-tooltip">Enter message</span>
+                        </div>
+                        <div class="form-action">
+                            <div class="checkbox-wrapper">
+                                <input type="checkbox" name="send" id="send" />
+                                <label for="send">Send me a copy of this message</label>
+                            </div>
+                            <button class="btn">SEND</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
