@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.menu-inner {
+    margin-top: 50px;
+}
+
+.menu-dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-dropdown > li {
+    position: relative;
+    border: 1px solid #f1f1f1;
+    padding: 5px;
+}
+
+.menu-dropdown > li > a {
+    position: relative;
+    display: block;
+    padding: 15px 20px;
+    font-size: 1.3rem;
+    color: #666;
+    margin-right: -1px;
+    transition: all 0.3s linear;
+}
+
+.menu-dropdown > li.empty {
+    display: block;
+    width: 466px;
+    padding: 29px 28px;
+    border: 1px solid #f1f1f1;
+}
+
+.menu-dropdown > li > a.arrow::after {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    content: "\f078";
+    font-family: "FontAwesome";
+}
+
+.menu-dropdown > li > a > i {
+    margin-right: 10px;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    display: none;
+    background: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.sub-menu::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.sub-menu > li > a {
+    display: block;
+    width: 200px;
+    padding: 15px 30px;
+    color: #666;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-menu > li > a > i {
+    margin-right: 10px;
+}
+
+.menu-dropdown > li:hover > .sub-menu {
+    display: block;
+}
+
+.menu-dropdown > li:hover > a {
+    background-color: #2da5da;
+    color: #fff;
+}

@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.form-wrapper {
+    background-image: url("../images/login-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-position: 0 bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 24px;
+}
+
+.form-inner {
+    display: flex;
+    width: 752px;
+    height: 435px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.form-left {
+    position: relative;
+    width: 42%;
+    height: inherit;
+    padding: 80px 15px;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    color: #fff;
+    background: #ff574d;
+    text-align: center;
+}
+
+.form-left::after {
+    font-family: "FontAwesome";
+    content: "\f061";
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    z-index: 1;
+    margin-top: -20px;
+    font-family: fontAwesome;
+    line-height: 40px;
+    color: #ff574d;
+    font-size: 14px;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.logo span {
+    display: inline-block;
+    padding: 4px 5px 2px;
+    background: #fff;
+    line-height: 1;
+    color: #ff574d;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.form-left__desc {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.btn-more {
+    margin-top: 32px;
+    display: inline-block;
+    padding: 8px 33px;
+    color: #ff574d;
+    background: #fff;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.social li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: #00000012;
+    color: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.social li a i {
+    font-size: 14px;
+    line-height: 32px;
+}
+
+.form-right {
+    width: 57%;
+    padding: 40px;
+}
+
+.form-right__heading {
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #272323;
+    display: block;
+    text-align: center;
+}
+
+.form-right__heading span {
+    color: #ff574d;
+}
+
+.form-right__heading::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background: #ff574d;
+}
+
+.form-control {
+    padding-top: 25px;
+}
+
+.form-group,
+.form-check {
+    margin: 20px 0;
+}
+
+.form-group input,
+.btn-log {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 15px;
+    outline: 0;
+    font-weight: 500;
+    color: #717171;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #717171;
+    font-size: 1.4rem;
+}
+
+.form-check .accordion-content input {
+    margin-right: 10px;
+}
+
+.form-check a {
+    color: inherit;
+}
+
+.input-check {
+    position: relative;
+    cursor: pointer;
+    padding-left: 28px;
+    color: #717171;
+}
+
+.input-check input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.input-check .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #ddd;
+    border-radius: 2px;
+}
+
+.input-check input:checked ~ .checkmark:before {
+    content: "\f00c";
+    position: absolute;
+    top: -1px;
+    left: 1px;
+    font-family: "FontAwesome";
+    font-size: 15px;
+    background: transparent;
+    color: #333;
+}
+
+.btn-log {
+    background: #ff574d;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.form-control__text {
+    text-align: center;
+    color: #717171;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.form-control__text a {
+    color: inherit;
+}
