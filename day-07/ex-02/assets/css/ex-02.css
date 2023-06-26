@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,300;0,400;0,500;1,600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Asap", sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.product-inner {
+    position: relative;
+}
+
+.profile-img__cover {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+}
+
+.profile-logo {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 240px;
+    left: 310px;
+    max-width: 250px;
+}
+
+.profile-logo img {
+    width: 100%;
+}
+
+.profile-info {
+    position: absolute;
+    top: 160px;
+    left: 575px;
+    color: #fff;
+}
+
+.profile-info__name {
+    font-size: 3.2rem;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 2px rgba(184, 121, 38, 0.5);
+}
+
+.profile-stats {
+    display: flex;
+    gap: 40px;
+}
+
+.profile-stats b {
+    font-size: 2.5rem;
+}
+
+.tab-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+.tab-list > li > a {
+    display: block;
+    padding: 10px 15px;
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.tab-list > li > a.active {
+    position: relative;
+    color: #ff6960;
+}
+
+.tab-list > li > a.active::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+    width: 81px;
+    height: 3px;
+    background: #ff6960;
+}
