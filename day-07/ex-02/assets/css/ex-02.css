@@ -38,7 +38,7 @@ a {
     position: absolute;
     transform: translateY(-50%);
     top: 240px;
-    left: 310px;
+    left: 150px;
     max-width: 250px;
 }
 
@@ -49,7 +49,7 @@ a {
 .profile-info {
     position: absolute;
     top: 160px;
-    left: 575px;
+    left: 430px;
     color: #fff;
 }
 
