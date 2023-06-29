@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Manrope", sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.header {
+    padding: 30px 0;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list > li > a {
+    padding: 30px 20px;
+    color: #333;
+    font-weight: 700;
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.nav-list > li > a:hover {
+    color: #adadad;
+}
+
+.nav-list > li > a.chevron-down::after {
+    font-family: "FontAwesome";
+    content: "\f078";
+    font-size: 1.4rem;
+    margin-left: 5px;
+}
+
+.hero-wrap {
+    width: 100%;
+    height: calc(100vh - 82px);
+    overflow: hidden;
+}
+
+.hero-wrap__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mega-menu {
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 16px rgba(17, 17, 26, 0.1);
+    display: none;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.nav-list > li > a:hover + .mega-menu {
+    display: block;
+}
+
+.menu-inner {
+    display: flex;
+    padding: 30px;
+}
+
+.menu-left {
+    width: 35%;
+    border-right: 1px solid #ddd;
+}
+
+.left-inner:last-child {
+    margin-top: 30px;
+}
+
+.menu-left__heading {
+    color: #333;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-col {
+    padding-right: 80px;
+}
+
+.menu-col > ul > li > a {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 6px 0;
+    display: block;
+}
+
+.menu-right {
+    width: 65%;
+    padding-left: 30px;
+}

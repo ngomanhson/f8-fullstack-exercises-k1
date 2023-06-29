@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping Cart Mini</title>
+        <link rel="stylesheet" href="./assets/css/ex-02.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="cart-inner">
+                <label for="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </label>
+
+                <input type="checkbox" name="cart" id="cart" />
+
+                <label for="cart" class="overlay"></label>
+                <div class="cart-drawer">
+                    <div class="cart-top">
+                        <h1 class="cart-top__heading">Shopping Cart</h1>
+                        <label for="cart">
+                            <i class="fa-solid fa-circle-xmark"></i>
+                        </label>
+                    </div>
+                    <div class="list-product">
+                        <div class="product-item">
+                            <img src="./assets/images/img-01.png" alt="Affinity Queen Poster Bed" />
+                            <div class="product-info">
+                                <h2 class="product-info__name">Affinity Queen Poster Bed</h2>
+                                <div class="qty-price">
+                                    <div class="cart-qty">
+                                        <button type="button">-</button>
+                                        <input type="number" name="qty" id="qty" value="1" />
+                                        <button type="button">+</button>
+                                    </div>
+                                    <p class="cart-price">1x <span>$570</span></p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="product-item">
+                            <img src="./assets/images/img-01.png" alt="Affinity Queen Poster Bed" />
+                            <div class="product-info">
+                                <h2 class="product-info__name">Affinity Queen Poster Bed</h2>
+                                <div class="qty-price">
+                                    <div class="cart-qty">
+                                        <button type="button">-</button>
+                                        <input type="number" name="qty" id="qty" value="1" />
+                                        <button type="button">+</button>
+                                    </div>
+                                    <p class="cart-price">1x <span>$570</span></p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="cart-bottom">
+                        <div class="cart-subtotal">
+                            <p class="cart-subtotal__title">Subtotal</p>
+                            <span class="cart-subtotal__pice">$920.00</span>
+                        </div>
+                        <p class="cart-bottom__desc">Taxes and shipping calculated at checkout</p>
+                        <a href="#!" class="cart-bottom__view">View Cart</a>
+                        <a href="#!" class="cart-bottom__add">Add To Cart</a>
+
+                        <div class="cart-shipping">
+                            <img src="./assets/images/shipping.png" alt="Shipping" />
+                            <p class="cart-shipping__desc">Spend $ 499.00 to Free Shipping</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.service-inner {
+    margin-top: 30px;
+}
+
+.service-text {
+    text-align: center;
+}
+
+.service-text__heading {
+    font-size: 4rem;
+}
+
+.service-text__desc {
+    margin-top: 15px;
+    font-size: 1.4rem;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.service-item {
+    flex-basis: calc(33.33% - 30px);
+    text-align: center;
+    padding: 15px;
+    position: relative;
+}
+
+.service-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.service-item__title {
+    font-size: 1.9rem;
+    margin-top: 25px;
+}
+
+.service-item__desc {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #8c93a0;
+    margin: 20px 0 25px;
+}
+
+.service-item__btn {
+    background: #29388e;
+    color: #fff;
+    padding: 10px 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+}

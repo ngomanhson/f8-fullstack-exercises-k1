@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Nunito", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.cart-inner > label {
+    text-align: right;
+}
+
+.cart-inner > label > i {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    cursor: pointer;
+}
+
+.cart-inner .overlay {
+    position: fixed;
+    inset: 0;
+    background: #00000036;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.cart-drawer {
+    position: fixed;
+    inset: 0 0 0 78%;
+    background: #fff;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: all 0.2s ease;
+}
+
+.cart-inner input[type="checkbox"] {
+    display: none;
+}
+
+.cart-inner input[type="checkbox"]:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart-inner input[type="checkbox"]:checked ~ .cart-drawer {
+    transform: translateX(0);
+}
+
+.cart-top {
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f3f3f3;
+}
+
+.cart-top__heading {
+    position: relative;
+    font-weight: 600;
+    font-size: 2.2rem;
+}
+
+.cart-top__heading::after {
+    content: "4";
+    position: absolute;
+    top: -8px;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #4060f3;
+    color: #fff;
+    font-size: 1.4rem;
+    border-radius: 50%;
+}
+
+.cart-top > label > i {
+    font-size: 2.2rem;
+    color: #ec5a2c;
+    cursor: pointer;
+}
+
+.product-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.list-product {
+    background: #fefefe;
+}
+
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background: #f9f9f9;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.product-item:last-child {
+    border: none;
+}
+
+.product-item i {
+    color: #a7a7a7;
+}
+
+.product-info__name {
+    color: #a7a7a7;
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.qty-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-qty {
+    display: flex;
+    align-items: center;
+    border-radius: 99px;
+    border: 1px solid #a7a7a7;
+}
+
+.cart-qty button {
+    flex: 1;
+    padding: 6px 10px;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color: #a7a7a7;
+}
+
+.cart-qty input[type="number"] {
+    flex: 1;
+    width: 40px;
+    padding: 8px 5px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #a7a7a7;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cart-price {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+.cart-bottom {
+    padding: 0 30px;
+}
+
+.cart-subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.cart-subtotal__title,
+.cart-subtotal__pice {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.cart-subtotal__pice {
+    color: #ec5b2d;
+}
+
+.cart-bottom__desc {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    color: #a7a7a7;
+}
+
+.cart-bottom__view,
+.cart-bottom__add {
+    display: block;
+    text-align: center;
+    padding: 16px 0;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.cart-bottom__view {
+    margin: 17px 0;
+    background: #fff;
+    color: #a7a7a7;
+    border: 1px solid #a7a7a7;
+}
+
+.cart-bottom__add {
+    color: #fff;
+    background: #4060f3;
+}
+
+.cart-shipping {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.cart-shipping img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
