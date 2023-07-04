@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+    --primary-color: #959ca9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.form-inner {
+    margin: 30px auto 0;
+    width: 800px;
+}
+
+.form-text {
+    text-align: center;
+}
+
+.form-text__heading {
+    font-size: 3rem;
+}
+
+.form-text__desc {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.form-control {
+    margin-top: 50px;
+}
+
+.form-group {
+    display: flex;
+    gap: 30px;
+}
+
+.form-input {
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.form-input label {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    transition: all 0.2s ease;
+}
+
+.form-input input,
+.form-input select,
+.form-input textarea {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    padding: 15px;
+    color: var(--primary-color);
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form-input textarea {
+    height: 150px;
+}
+
+.form-btn {
+    display: block;
+    margin: 0 auto;
+    background: #4d77d9;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 18px 28px;
+    font-weight: 600;
+    border-radius: 99px;
+}
+.form-input input:focus + label,
+.form-input input:valid + label,
+.form-input textarea:focus + label,
+.form-input textarea:valid + label {
+    top: 5px;
+    font-size: 1.2rem;
+}
+
+.form-input input:focus,
+.form-input textarea:focus {
+    border-color: #9fbcf0;
+}

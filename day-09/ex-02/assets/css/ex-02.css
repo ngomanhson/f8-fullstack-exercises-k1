@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.service-inner {
+    width: 1000px;
+    max-width: calc(100% - 48px);
+    margin: 50px auto 0;
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-item {
+    flex-basis: calc(33.33% - 20px);
+    padding: 30px;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.service-item i {
+    font-size: 4.5rem;
+    color: #b79181;
+}
+
+.service-item__heading {
+    margin-top: 25px;
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.service-item__desc {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #5e5e5e;
+}
+
+.background-hover {
+    background-image: url("../images/img.png");
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.service-item:hover .background-hover {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgb(255, 166, 0);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.hover-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    position: absolute;
+    inset: 0;
+    color: var(--white-color);
+    z-index: 2;
+}
+
+.hover-content::before {
+    content: "";
+    position: absolute;
+    inset: 15px;
+    border: 1px solid var(--white-color);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.hover-content:hover::before {
+    opacity: 1;
+}
+
+.hover-text__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 70px;
+    font-family: "Space Grotesk", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover .hover-text__heading {
+    margin-top: 0;
+}
+
+.hover-text__desc {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.btn-cta {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.btn-cta > i {
+    width: 25px;
+    height: 25px;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 50%;
+    font-size: 1.4rem;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 10px;
+    transition: all 0.3s linear;
+}
+
+.btn-cta:hover > i {
+    background: var(--white-color);
+    color: #000;
+}
